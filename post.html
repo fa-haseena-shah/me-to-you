@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me to You Project ✧ Share Your Message</title>
+    <link rel="icon" type="image/png" href="assets/illustrations/fav.webp">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body class="post-page">
+
+    <!-- nav -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="assets/illustrations/fav.webp" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">ABOUT</a>
+        </div>
+    </nav>
+
+    <!-- bottom-left utility buttons -->
+    <div class="utility-btns">
+        <button type="button" id="soundBtn">
+            <img src="assets/illustrations/sound-on.PNG" alt="music playing ~">
+        </button>
+    </div>
+
+    <!-- write letter page content -->
+    <main class="post-main">
+        <div class="post-title typewriter-2"><h1>Me to You</h1></div>
+
+        <div class="post-form-wrap">
+            <textarea
+                id="letterInput"
+                name="letter"
+                placeholder="Write your message here"
+            ></textarea>
+
+            <div class="post-bottom">
+                <input
+                    type="text"
+                    id="authorName"
+                    placeholder="From:"
+                >
+                <button type="button" id="postBtn">POST</button>
+            </div>
+        </div>
+
+        <!-- success message, hidden by default -->
+        <p class="post-success" id="postSuccess">Your letter has been sent ✦</p>
+    </main>
+</body>
+</html>

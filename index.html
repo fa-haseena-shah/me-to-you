@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Me to You Project ✧ Your Message</title>
+    <link rel="icon" type="image/png" href="assets/illustrations/fav.webp">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- nav -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="assets/illustrations/fav.webp" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="about.html" class="nav-link">ABOUT</a>
+        </div>
+    </nav>
+
+    <!-- bottom-left utility buttons -->
+    <div class="utility-btns">
+        <button type="button" id="soundBtn">
+            <img src="assets/illustrations/sound-on.PNG" alt="music playing ~">
+        </button>
+    </div>
+
+    <!-- side title -->
+    <div class="side-title">
+        <span class="side-title-sub typewriter"><p>yours truly,</p></span>
+        <span class="side-title-main">Me to You</span>
+        <a href="post.html">
+            <button type="button" class="side-title-btn">post a message</button>
+        </a>
+    </div>
+
+    <!-- mailbox -->
+    <div class="mailbox">
+        <img src="assets/illustrations/mb-1.PNG" alt="mailbox" id="mailboxClosed">
+        <img src="assets/illustrations/floral-1.PNG" alt="floral vines" id="floralVine1">
+    </div>
+
+    <!-- letter display dialog -->
+    <dialog id="letterDialog">
+        <div class="letter-container">
+            <p id="letterDisplay"></p>
+            <div class="auth-container">
+                <p>-</p>
+                <p id="authorDisplay"></p>
+            </div>
+        </div>
+        <button type="button" class="closeLetterBtn" id="closeLetterBtn">x</button>
+    </dialog>
+</body>
+</html>
